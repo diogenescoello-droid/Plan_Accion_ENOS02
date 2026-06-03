@@ -7,55 +7,30 @@
 <link rel="stylesheet" href="assets/site.css">
 <script defer src="assets/site.js"></script>
 </head>
-<body>
+<body data-help-title="Automatización explicada" data-help-text="No se debe presentar un borrador automático como documento final sin revisión institucional." data-help-steps="La plataforma actual permite un flujo semiautomático con GPT y archivos.||La automatización completa requiere una base central conectada a Kobo.||El documento generado debe salir como borrador técnico sujeto a validación.||Todo producto debe tener código de control, versión, fecha y enlace Drive.">
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="index.html"><span class="logo-badge">EN</span><span>ENOS Guayas 2.1</span></a>
-    <nav class="menu"><a href="index.html">Inicio</a>
-<a href="instituciones.html">Instituciones</a>
-<a href="ejes.html">Ejes del plan</a>
-<a href="cartografia.html">Cartografía</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="automatizacion.html">Automatización</a>
-<a href="gpt.html">GPT</a>
-<a href="biblioteca.html">Biblioteca</a>
-<a href="acceso.html">Acceso</a>
-<a href="validacion.html">Validación</a></nav>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="instituciones.html">Responsables y MTT</a>
+      <a href="ejes.html">Ejes del plan</a>
+      <a href="cartografia.html">Cartografía</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="gpt.html">GPT</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="acceso.html">Acceso</a>
+      <a href="validacion.html">Validación</a>
+    </nav>
   </div>
 </header>
 
-<section class="hero"><div class="container"><span class="kicker">Automatización documental y trazabilidad</span><h1>De Kobo al Word institucional con código de control</h1><p class="lead">Arquitectura para que los formularios alimenten una base central y generen borradores técnicos trazables en formato institucional.</p></div></section>
-<section class="section"><div class="container">
-<div class="flow">
-  <div class="step"><div class="step-num">1</div><h3>Kobo</h3><p class="muted">Los técnicos registran datos por formulario.</p></div>
-  <div class="step"><div class="step-num">2</div><h3>Base central</h3><p class="muted">Kobo API/REST consolida en Sheets o backend.</p></div>
-  <div class="step"><div class="step-num">3</div><h3>Matriz</h3><p class="muted">Se calculan brechas, prioridades y pendientes.</p></div>
-  <div class="step"><div class="step-num">4</div><h3>GPT/API</h3><p class="muted">Genera análisis, resumen, recomendaciones y matrices.</p></div>
-  <div class="step"><div class="step-num">5</div><h3>Word/PDF</h3><p class="muted">Se llena plantilla SNGR y se asigna código de control.</p></div>
-</div>
-</div></section>
-<section class="section"><div class="container grid-2">
-  <div class="card">
-    <h2>Código de control propuesto</h2>
-    <div class="code">ENOS-GYE-[CANTON]-[TIPO]-[AAAAMMDD]-[SECUENCIAL]-V[VERSION]</div>
-    <p class="muted">Ejemplo: ENOS-GYE-DAULE-PLAN-20260604-001-V01</p>
-  </div>
-  <div class="card">
-    <h2>Estados del documento</h2>
-    <p><span class="badge">Generado automáticamente</span> <span class="badge warn">En revisión técnica</span> <span class="badge ok">Validado</span> <span class="badge">Aprobado para remisión</span></p>
-    <p class="muted">El sistema no genera documentos finales sin revisión. Produce borradores técnicos sujetos a validación institucional.</p>
-  </div>
-</div></section>
-<section class="section"><div class="container">
-<h2>Entregables de automatización incluidos</h2>
-<div class="grid">
-  <div class="card"><h3>📘 Matriz maestra</h3><p>Rutas, accesos, cartografía, trazabilidad, indicadores y automatización.</p><a class="btn light" href="docs/matrices/Matriz_maestra_ENOS_Guayas_2_1_FINAL.xlsx" target="_blank" rel="noopener">Descargar matriz</a></div>
-  <div class="card"><h3>⚙️ Script base</h3><p>Plantilla conceptual de Apps Script para conectar Kobo, Sheets, GPT/API y Docs.</p><a class="btn light" href="automatizacion/AppsScript_Kobo_Sheets_Docs_OpenAI_PLANTILLA.gs" target="_blank" rel="noopener">Ver script</a></div>
-  <div class="card"><h3>📄 Plantilla oficial</h3><p>Formato referencial SPREA para plan de acción cantonal/provincial.</p><a class="btn light" href="docs/insumos_sprea/Formato_referencial_plan_accion_cantonal_provincial.docx" target="_blank" rel="noopener">Abrir formato</a></div>
-</div>
-</div></section>
+<section class="hero"><div class="container"><span class="kicker">Automatización documental</span><h1>De Kobo al borrador Word con trazabilidad</h1><p class="lead">La automatización completa se basa en una base consolidada: Kobo → Sheets/Base central → matriz → GPT/API → Word/PDF → Drive → registro de control.</p></div></section>
+<section class="section"><div class="container"><div class="flow"><div class="step"><div class="step-num">1</div><h3>Kobo</h3><p class="muted">El técnico llena formularios.</p></div><div class="step"><div class="step-num">2</div><h3>Base</h3><p class="muted">Los datos llegan a Sheets/API.</p></div><div class="step"><div class="step-num">3</div><h3>Matriz</h3><p class="muted">Se consolida por cantón, eje y actor.</p></div><div class="step"><div class="step-num">4</div><h3>GPT/API</h3><p class="muted">Redacta borrador técnico.</p></div><div class="step"><div class="step-num">5</div><h3>Word/PDF</h3><p class="muted">Se asigna código y se guarda.</p></div></div></div></section>
+<section class="section"><div class="container grid-2"><div class="card"><h3>Cómo obtener el plan ahora</h3><ol class="clean"><li>Levante datos en Kobo.</li><li>Exporte o consolide la matriz.</li><li>Abra el GPT técnico.</li><li>Cargue Excel/CSV/DOCX.</li><li>Pida el borrador del Plan de Acción por ejes.</li><li>Revise técnicamente, asigne código y guarde en Drive.</li></ol><div class="btns"><a class="btn blue" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank">Abrir GPT</a><a class="btn light" href="docs/insumos_sprea/Formato_referencial_plan_accion_cantonal_provincial.docx">Formato SPREA</a></div></div><div class="card"><h3>Fase automática posterior</h3><p class="muted">Para que el sistema genere el Word sin intervención manual se requiere configurar Kobo API/REST, Google Sheets o backend, Apps Script y credenciales API.</p><div class="code">ENOS-GYE-[CANTON]-PLAN-[AAAAMMDD]-001-V01</div><div class="btns"><a class="btn" href="automatizacion/AppsScript_Kobo_Sheets_Docs_OpenAI_PLANTILLA.gs">Ver script plantilla</a><a class="btn light" href="docs/matrices/Matriz_maestra_ENOS_Guayas_2_1_FINAL.xlsx">Matriz maestra</a></div></div></div></section>
 
-<footer class="footer"><div class="container">Ecosistema territorial ENOS Guayas 2.1 · Plataforma pública con recursos restringidos según competencia institucional.</div></footer>
+<footer class="footer"><div class="container">ENOS Guayas 2.1 · GAD provinciales y cantonales remiten planes; GAD parroquiales, Mesas Técnicas e instituciones aportan insumos sectoriales. Recursos sensibles con acceso restringido.</div></footer>
 <div class="toast"></div>
 </body>
 </html>

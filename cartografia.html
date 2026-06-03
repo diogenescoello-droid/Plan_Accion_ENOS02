@@ -7,56 +7,41 @@
 <link rel="stylesheet" href="assets/site.css">
 <script defer src="assets/site.js"></script>
 </head>
-<body>
+<body data-help-title="Cartografía guiada" data-help-text="No publique capas sensibles sin revisión técnica." data-help-steps="Abra el visor ArcGIS para revisar o cargar capas de trabajo.||Use F07 para registrar aportes cartográficos y dejar trazabilidad.||Use Google Earth/KMZ para visualización rápida de rutas, puntos y zonas.||Valide formato, proyección, atributos y pertinencia antes de publicar una capa.">
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="index.html"><span class="logo-badge">EN</span><span>ENOS Guayas 2.1</span></a>
-    <nav class="menu"><a href="index.html">Inicio</a>
-<a href="instituciones.html">Instituciones</a>
-<a href="ejes.html">Ejes del plan</a>
-<a href="cartografia.html">Cartografía</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="automatizacion.html">Automatización</a>
-<a href="gpt.html">GPT</a>
-<a href="biblioteca.html">Biblioteca</a>
-<a href="acceso.html">Acceso</a>
-<a href="validacion.html">Validación</a></nav>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="instituciones.html">Responsables y MTT</a>
+      <a href="ejes.html">Ejes del plan</a>
+      <a href="cartografia.html">Cartografía</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="gpt.html">GPT</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="acceso.html">Acceso</a>
+      <a href="validacion.html">Validación</a>
+    </nav>
   </div>
 </header>
 
-<section class="hero"><div class="container"><span class="kicker">Cartografía y escenarios institucionales</span><h1>ArcGIS Online, Google Earth y carga controlada de capas</h1><p class="lead">El visor no es solo consulta: permite ordenar escenarios por eje del plan, institución, prioridad y nivel de validación técnica.</p>
-<div class="btns">
-<a class="btn" href="https://www.arcgis.com/apps/mapviewer/index.html?webmap=674af1befcfd4ae7bfbefdff918ebaf8" target="_blank" rel="noopener">Abrir visor ArcGIS ENOS</a>
-<a class="btn secondary" href="https://earth.google.com/web/" target="_blank" rel="noopener">Abrir Google Earth</a>
-<a class="btn light" href="https://drive.google.com/drive/folders/1a8hkBg1SkcY0xPYjxi1hyPTlUueZttrU?usp=sharing" target="_blank" rel="noopener">Abrir carpeta cartográfica Drive</a>
-</div></div></section>
-<section class="section"><div class="container grid">
-  <div class="card"><h3>🗺️ Visor oficial ArcGIS</h3><p class="muted">Consulta capas de amenaza, puntos críticos, infraestructura expuesta, rutas y escenarios. Solo deben publicarse capas revisadas.</p><a class="btn" href="https://www.arcgis.com/apps/mapviewer/index.html?webmap=674af1befcfd4ae7bfbefdff918ebaf8" target="_blank" rel="noopener">Abrir ArcGIS</a></div>
-  <div class="card"><h3>🌍 Google Earth / KML</h3><p class="muted">Útil para visualizar KMZ/KML, rutas, polígonos y propuestas territoriales de manera rápida.</p><a class="btn secondary" href="https://earth.google.com/web/" target="_blank" rel="noopener">Abrir Google Earth</a></div>
-  <div class="card"><h3>📤 Aporte de capas</h3><p class="muted">Los técnicos pueden proponer KMZ, SHP ZIP, XLS, CSV o GeoJSON. La publicación requiere revisión técnica.</p><a class="btn light" href="docs/formularios/F11_XLSForm_propuesta_escenario_institucional_ENOS_Guayas_2_1.xlsx" target="_blank" rel="noopener">Descargar F11 XLSForm</a></div>
+<section class="hero"><div class="container"><span class="kicker">Escenarios cartográficos</span><h1>ArcGIS, Google Earth y aportes geográficos para el Plan</h1><p class="lead">Los mapas se usan para priorizar escenarios, no solo para visualizar. Todo archivo recibido debe validarse antes de publicarse como capa oficial o de trabajo.</p><div class="notice"><strong>Regla:</strong> cualquier técnico puede proponer una capa; solo el equipo técnico valida y publica en el visor oficial.</div></div></section>
+<section class="section"><div class="container grid-2">
+ <div class="card"><h3>🗺️ ArcGIS Online</h3><p class="muted">Abra el visor existente o inicie un mapa en blanco para cargar capas por periodo de actualización.</p><div class="btns"><a class="btn" href="https://www.arcgis.com/apps/mapviewer/index.html?webmap=674af1befcfd4ae7bfbefdff918ebaf8" target="_blank">Abrir visor ENOS</a><a class="btn light" href="https://www.arcgis.com/apps/mapviewer/index.html" target="_blank">Abrir ArcGIS en blanco</a></div></div>
+ <div class="card"><h3>🌍 Google Earth</h3><p class="muted">Use Google Earth como visor complementario para rutas, polígonos, puntos críticos y escenarios KMZ/KML.</p><div class="btns"><a class="btn" href="https://earth.google.com/web/" target="_blank">Abrir Google Earth</a><a class="btn light" href="docs/cartografia/ENOS_Guayas_2_1_Base_Google_Earth.kmz">Descargar KMZ base</a></div></div>
+ <div class="card"><h3>📥 Aporte cartográfico institucional</h3><p class="muted">Registre el origen, responsable, cobertura, formato, restricciones y propósito del archivo.</p><div class="btns"><a class="btn" href="https://ee.kobotoolbox.org/x/0pXtskTZ" target="_blank">F07 Aportar cartografía</a><a class="btn light" href="docs/formularios/F11_XLSForm_propuesta_escenario_institucional_ENOS_Guayas_2_1.xlsx">Descargar F11 escenario</a></div></div>
+ <div class="card"><h3>📁 Formatos aceptados</h3><p class="muted">KMZ/KML, SHP comprimido en ZIP, XLS/XLSX con coordenadas, CSV, GeoJSON, PDF o imagen como respaldo.</p><div class="btns"><a class="btn light" href="docs/cartografia/plantilla_capas_ENOS_Guayas_2_1.geojson">Plantilla GeoJSON</a><a class="btn light" href="docs/cartografia/plantilla_puntos_ENOS_Guayas_2_1.csv">Plantilla CSV</a></div></div>
 </div></section>
-<section class="section"><div class="container">
-<h2>Flujo de validación cartográfica</h2>
-<div class="flow">
-  <div class="step"><div class="step-num">1</div><h3>Proponer capa</h3><p class="muted">Institución sube archivo y metadatos mediante F11 o carpeta controlada.</p></div>
-  <div class="step"><div class="step-num">2</div><h3>Revisar</h3><p class="muted">Se verifica formato, coordenadas, atributos, alcance y uso.</p></div>
-  <div class="step"><div class="step-num">3</div><h3>Clasificar</h3><p class="muted">Se vincula a eje del plan, institución, categoría y prioridad.</p></div>
-  <div class="step"><div class="step-num">4</div><h3>Publicar</h3><p class="muted">Solo capas validadas se agregan al visor ArcGIS o Google Earth.</p></div>
-  <div class="step"><div class="step-num">5</div><h3>Usar en plan</h3><p class="muted">La capa respalda escenarios, brechas, acciones y decisiones.</p></div>
-</div>
-</div></section>
-<section class="section"><div class="container">
-<h2>Formatos aceptados</h2>
-<div class="table-wrap"><table><thead><tr><th>Formato</th><th>Uso</th><th>Condición</th></tr></thead><tbody>
-<tr><td>KMZ/KML</td><td>Google Earth, rutas, puntos y polígonos referenciales</td><td>Debe tener nombre, territorio y responsable</td></tr>
-<tr><td>SHP ZIP</td><td>Capas vectoriales técnicas</td><td>Subir como .zip con .shp, .shx, .dbf y .prj</td></tr>
-<tr><td>XLS/XLSX/CSV</td><td>Puntos con coordenadas, infraestructura y recursos</td><td>Debe incluir latitud/longitud o campos de ubicación</td></tr>
-<tr><td>GeoJSON</td><td>Capa web ligera</td><td>Ideal para visor y transferencia rápida</td></tr>
-<tr><td>PDF/imagen</td><td>Mapa de respaldo</td><td>No es capa editable; sirve como evidencia</td></tr>
-</tbody></table></div>
-</div></section>
+<section class="section"><div class="container"><h2>Capas por eje del plan</h2><div class="table-wrap"><table><thead><tr><th>Eje</th><th>Capas sugeridas</th><th>Producto cartográfico</th></tr></thead><tbody>
+<tr><td>Conocimiento del riesgo</td><td>Amenazas, susceptibilidad, puntos críticos, población e infraestructura expuesta.</td><td>Escenario territorial priorizado.</td></tr>
+<tr><td>Monitoreo y alerta</td><td>Puntos de monitoreo, ríos, estaciones, novedades, zonas recurrentes.</td><td>Mapa de seguimiento y alerta.</td></tr>
+<tr><td>Prevención y mitigación</td><td>Obras preventivas, drenajes, desazolves, taludes, puentes y vías críticas.</td><td>Mapa de acciones preventivas.</td></tr>
+<tr><td>Preparación y respuesta</td><td>Alojamientos, rutas, centros de acopio, recursos, maquinaria y PMU.</td><td>Mapa operativo de respuesta.</td></tr>
+<tr><td>Recuperación y seguimiento</td><td>Acciones ejecutadas, brechas pendientes, zonas intervenidas y daños reportados.</td><td>Mapa de avance y recuperación.</td></tr>
+</tbody></table></div></div></section>
 
-<footer class="footer"><div class="container">Ecosistema territorial ENOS Guayas 2.1 · Plataforma pública con recursos restringidos según competencia institucional.</div></footer>
+<footer class="footer"><div class="container">ENOS Guayas 2.1 · GAD provinciales y cantonales remiten planes; GAD parroquiales, Mesas Técnicas e instituciones aportan insumos sectoriales. Recursos sensibles con acceso restringido.</div></footer>
 <div class="toast"></div>
 </body>
 </html>

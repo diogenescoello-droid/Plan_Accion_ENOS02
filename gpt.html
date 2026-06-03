@@ -7,54 +7,34 @@
 <link rel="stylesheet" href="assets/site.css">
 <script defer src="assets/site.js"></script>
 </head>
-<body>
+<body data-help-title="Uso del GPT" data-help-text="El GPT ayuda a redactar, pero no reemplaza la validación técnica." data-help-steps="Abra el GPT solo cuando tenga un archivo, matriz o evidencia para analizar.||Cargue el archivo y use el prompt que corresponda.||Revise siempre el borrador generado antes de usarlo institucionalmente.||Los aportes de Mesas Técnicas alimentan el Plan del GAD; no son planes independientes.">
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="index.html"><span class="logo-badge">EN</span><span>ENOS Guayas 2.1</span></a>
-    <nav class="menu"><a href="index.html">Inicio</a>
-<a href="instituciones.html">Instituciones</a>
-<a href="ejes.html">Ejes del plan</a>
-<a href="cartografia.html">Cartografía</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="automatizacion.html">Automatización</a>
-<a href="gpt.html">GPT</a>
-<a href="biblioteca.html">Biblioteca</a>
-<a href="acceso.html">Acceso</a>
-<a href="validacion.html">Validación</a></nav>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="instituciones.html">Responsables y MTT</a>
+      <a href="ejes.html">Ejes del plan</a>
+      <a href="cartografia.html">Cartografía</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="gpt.html">GPT</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="acceso.html">Acceso</a>
+      <a href="validacion.html">Validación</a>
+    </nav>
   </div>
 </header>
 
-<section class="hero"><div class="container"><span class="kicker">GPT técnico</span><h1>Motor de apoyo para redactar, revisar y estructurar entregables</h1><p class="lead">El GPT no reemplaza la validación técnica. Sirve para ordenar datos, generar borradores, detectar vacíos y proponer matrices.</p>
-<div class="btns"><a class="btn blue" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT Técnico ENOS Guayas 2.0</a></div></div></section>
-<section class="section"><div class="container"><h2>Prompts operativos</h2><div class="grid-2">
-    <div class="card copy">
-      <h3>Prompt 1</h3>
-      <p id="prompt_informe" class="code">Analiza los archivos cargados y genera un informe técnico preliminar ENOS conforme a los lineamientos oficiales. Identifica amenaza, exposición, vulnerabilidad, capacidades, brechas, acciones prioritarias, responsables sugeridos, medios de verificación y decisiones requeridas. Marca el resultado como borrador técnico sujeto a revisión.</p>
-      <button class="btn light" onclick="copyText('prompt_informe')">Copiar prompt</button>
-    </div>
-    <div class="card copy">
-      <h3>Prompt 2</h3>
-      <p id="prompt_actor" class="code">Genera el aporte institucional para el Plan de Acción ENOS considerando el tipo de institución, sus competencias, los ejes del plan, los datos cargados y las brechas identificadas. Organiza el resultado por: conocimiento del riesgo, monitoreo/alerta, prevención/mitigación, preparación/respuesta y recuperación/seguimiento.</p>
-      <button class="btn light" onclick="copyText('prompt_actor')">Copiar prompt</button>
-    </div>
-    <div class="card copy">
-      <h3>Prompt 3</h3>
-      <p id="prompt_brechas" class="code">Construye una matriz de brechas con columnas: territorio, institución, eje del plan, amenaza, elemento expuesto, capacidad existente, brecha, prioridad, responsable sugerido, acción recomendada, plazo, medio de verificación y decisión requerida.</p>
-      <button class="btn light" onclick="copyText('prompt_brechas')">Copiar prompt</button>
-    </div>
-    <div class="card copy">
-      <h3>Prompt 4</h3>
-      <p id="prompt_autoridad" class="code">Convierte esta información en un resumen ejecutivo para autoridad. Responde: qué ocurre, dónde ocurre, qué está expuesto, cuál es la brecha, qué decisión se requiere, qué institución debe intervenir, cuál es la acción prioritaria y qué evidencia respalda la recomendación.</p>
-      <button class="btn light" onclick="copyText('prompt_autoridad')">Copiar prompt</button>
-    </div>
-    <div class="card copy">
-      <h3>Prompt 5</h3>
-      <p id="prompt_revision_plan" class="code">Revisa este Plan de Acción ENOS frente al formato referencial oficial y los lineamientos estratégicos. Identifica cumplimiento, vacíos, inconsistencias, acciones faltantes, falta de evidencia, brechas no atendidas y recomendaciones de ajuste.</p>
-      <button class="btn light" onclick="copyText('prompt_revision_plan')">Copiar prompt</button>
-    </div></div></div></section>
-<section class="section"><div class="container"><div class="notice">Para automatización real se debe usar API, base consolidada y plantilla Word. Este GPT personalizado es útil para trabajo manual/asistido, no monitorea carpetas ni formularios automáticamente.</div></div></section>
+<section class="hero"><div class="container"><span class="kicker">Asistente técnico</span><h1>GPT para transformar matrices y archivos en borradores técnicos</h1><p class="lead">El GPT no monitorea carpetas por sí solo. Sirve para analizar archivos cargados, estructurar aportes y generar borradores para revisión técnica.</p><div class="btns"><a class="btn blue" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank">Abrir GPT Técnico ENOS</a><a class="btn light" href="docs/insumos_sprea/Formato_referencial_plan_accion_cantonal_provincial.docx">Formato referencial SPREA</a><a class="btn light" href="docs/Plantillas_maestras_ENOS_Guayas_2_0.xlsx">Plantilla maestra</a></div></div></section>
+<section class="section"><div class="container grid-2">
+ <div class="card copy"><h3>Prompt: Plan de Acción GAD</h3><p id="promptPlan">Con base en los archivos cargados, genera un borrador del Plan de Acción ENOS para el GAD provincial o cantonal correspondiente, organizado por los ejes: conocimiento del riesgo, monitoreo y alerta, prevención y mitigación, preparación y respuesta, recuperación y seguimiento. Incluye resumen ejecutivo, escenarios, brechas, acciones priorizadas, responsables, medios de verificación, decisiones requeridas y anexos sugeridos. Indica claramente qué información falta.</p><button class="btn" onclick="copyText('promptPlan')">Copiar prompt</button></div>
+ <div class="card copy"><h3>Prompt: Aporte de Mesa Técnica</h3><p id="promptMTT">Analiza los archivos cargados y genera un aporte técnico de Mesa Técnica para integrarlo al Plan de Acción ENOS del GAD. Identifica el eje del plan al que corresponde, escenario sectorial, capacidades disponibles, brechas, acciones recomendadas, responsable institucional, prioridad y medios de verificación. No lo presentes como plan institucional independiente.</p><button class="btn" onclick="copyText('promptMTT')">Copiar prompt</button></div>
+ <div class="card copy"><h3>Prompt: Matriz de brechas</h3><p id="promptBrechas">Construye una matriz de brechas con columnas: territorio, eje del plan, amenaza, elemento expuesto, capacidad existente, brecha identificada, prioridad, responsable, acción recomendada, plazo, medio de verificación y decisión requerida.</p><button class="btn" onclick="copyText('promptBrechas')">Copiar prompt</button></div>
+ <div class="card copy"><h3>Prompt: Resumen ejecutivo</h3><p id="promptResumen">Convierte esta información en un resumen ejecutivo para autoridad. Debe responder: qué ocurre, dónde ocurre, qué está expuesto, cuál es la brecha, qué decisión se requiere, qué acción se recomienda y quién debe intervenir.</p><button class="btn" onclick="copyText('promptResumen')">Copiar prompt</button></div>
+</div></section>
 
-<footer class="footer"><div class="container">Ecosistema territorial ENOS Guayas 2.1 · Plataforma pública con recursos restringidos según competencia institucional.</div></footer>
+<footer class="footer"><div class="container">ENOS Guayas 2.1 · GAD provinciales y cantonales remiten planes; GAD parroquiales, Mesas Técnicas e instituciones aportan insumos sectoriales. Recursos sensibles con acceso restringido.</div></footer>
 <div class="toast"></div>
 </body>
 </html>
