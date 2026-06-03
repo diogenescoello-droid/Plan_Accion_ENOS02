@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPT | ENOS Guayas 2.1</title>
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-badge">EN</span><span>ENOS Guayas 2.1</span></a>
+    <nav class="menu"><a href="index.html">Inicio</a>
+<a href="instituciones.html">Instituciones</a>
+<a href="ejes.html">Ejes del plan</a>
+<a href="cartografia.html">Cartografía</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="automatizacion.html">Automatización</a>
+<a href="gpt.html">GPT</a>
+<a href="biblioteca.html">Biblioteca</a>
+<a href="acceso.html">Acceso</a>
+<a href="validacion.html">Validación</a></nav>
+  </div>
+</header>
+
+<section class="hero"><div class="container"><span class="kicker">GPT técnico</span><h1>Motor de apoyo para redactar, revisar y estructurar entregables</h1><p class="lead">El GPT no reemplaza la validación técnica. Sirve para ordenar datos, generar borradores, detectar vacíos y proponer matrices.</p>
+<div class="btns"><a class="btn blue" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT Técnico ENOS Guayas 2.0</a></div></div></section>
+<section class="section"><div class="container"><h2>Prompts operativos</h2><div class="grid-2">
+    <div class="card copy">
+      <h3>Prompt 1</h3>
+      <p id="prompt_informe" class="code">Analiza los archivos cargados y genera un informe técnico preliminar ENOS conforme a los lineamientos oficiales. Identifica amenaza, exposición, vulnerabilidad, capacidades, brechas, acciones prioritarias, responsables sugeridos, medios de verificación y decisiones requeridas. Marca el resultado como borrador técnico sujeto a revisión.</p>
+      <button class="btn light" onclick="copyText('prompt_informe')">Copiar prompt</button>
+    </div>
+    <div class="card copy">
+      <h3>Prompt 2</h3>
+      <p id="prompt_actor" class="code">Genera el aporte institucional para el Plan de Acción ENOS considerando el tipo de institución, sus competencias, los ejes del plan, los datos cargados y las brechas identificadas. Organiza el resultado por: conocimiento del riesgo, monitoreo/alerta, prevención/mitigación, preparación/respuesta y recuperación/seguimiento.</p>
+      <button class="btn light" onclick="copyText('prompt_actor')">Copiar prompt</button>
+    </div>
+    <div class="card copy">
+      <h3>Prompt 3</h3>
+      <p id="prompt_brechas" class="code">Construye una matriz de brechas con columnas: territorio, institución, eje del plan, amenaza, elemento expuesto, capacidad existente, brecha, prioridad, responsable sugerido, acción recomendada, plazo, medio de verificación y decisión requerida.</p>
+      <button class="btn light" onclick="copyText('prompt_brechas')">Copiar prompt</button>
+    </div>
+    <div class="card copy">
+      <h3>Prompt 4</h3>
+      <p id="prompt_autoridad" class="code">Convierte esta información en un resumen ejecutivo para autoridad. Responde: qué ocurre, dónde ocurre, qué está expuesto, cuál es la brecha, qué decisión se requiere, qué institución debe intervenir, cuál es la acción prioritaria y qué evidencia respalda la recomendación.</p>
+      <button class="btn light" onclick="copyText('prompt_autoridad')">Copiar prompt</button>
+    </div>
+    <div class="card copy">
+      <h3>Prompt 5</h3>
+      <p id="prompt_revision_plan" class="code">Revisa este Plan de Acción ENOS frente al formato referencial oficial y los lineamientos estratégicos. Identifica cumplimiento, vacíos, inconsistencias, acciones faltantes, falta de evidencia, brechas no atendidas y recomendaciones de ajuste.</p>
+      <button class="btn light" onclick="copyText('prompt_revision_plan')">Copiar prompt</button>
+    </div></div></div></section>
+<section class="section"><div class="container"><div class="notice">Para automatización real se debe usar API, base consolidada y plantilla Word. Este GPT personalizado es útil para trabajo manual/asistido, no monitorea carpetas ni formularios automáticamente.</div></div></section>
+
+<footer class="footer"><div class="container">Ecosistema territorial ENOS Guayas 2.1 · Plataforma pública con recursos restringidos según competencia institucional.</div></footer>
+<div class="toast"></div>
+</body>
+</html>

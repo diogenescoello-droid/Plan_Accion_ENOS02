@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instituciones | ENOS Guayas 2.1</title>
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-badge">EN</span><span>ENOS Guayas 2.1</span></a>
+    <nav class="menu"><a href="index.html">Inicio</a>
+<a href="instituciones.html">Instituciones</a>
+<a href="ejes.html">Ejes del plan</a>
+<a href="cartografia.html">Cartografía</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="automatizacion.html">Automatización</a>
+<a href="gpt.html">GPT</a>
+<a href="biblioteca.html">Biblioteca</a>
+<a href="acceso.html">Acceso</a>
+<a href="validacion.html">Validación</a></nav>
+  </div>
+</header>
+
+<section class="hero"><div class="container"><span class="kicker">Entrada por rol institucional</span><h1>Seleccione la institución o actor que construirá su aporte al Plan de Acción</h1><p class="lead">La ruta se ajusta a competencias, ejes, escenarios, herramientas y entregables.</p></div></section>
+<section class="section"><div class="container">
+  <div class="searchbar"><input id="buscarActor" oninput="filterCards('buscarActor','.actor-card')" placeholder="Buscar institución, actor o competencia..."></div>
+  <div class="grid">
+    <div class="card actor-card" id="gad_cantonal">
+      <h3><span class="icon">🏛️</span>GAD Cantonal</h3>
+      <span class="badge">Gobierno local</span>
+      <p class="muted">Puntos críticos, drenaje, infraestructura municipal, alojamientos, rutas, brechas y acciones preventivas.</p>
+      <div class="tool-list"><span class="tool">F01</span><span class="tool">F02</span><span class="tool">F03</span><span class="tool">F04</span><span class="tool">F05</span><span class="tool">F06</span><span class="tool">GPT</span><span class="tool">ArcGIS</span><span class="tool">Dashboard</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('gad_cantonal')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="gad_provincial">
+      <h3><span class="icon">🛣️</span>GAD Provincial / Prefectura</h3>
+      <span class="badge">Gobierno provincial</span>
+      <p class="muted">Vialidad rural, puentes, cuencas, corredores productivos, maquinaria y apoyo a cantones.</p>
+      <div class="tool-list"><span class="tool">F01</span><span class="tool">F03</span><span class="tool">F05</span><span class="tool">F06</span><span class="tool">F07</span><span class="tool">ArcGIS</span><span class="tool">Dashboard</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('gad_provincial')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="gad_parroquial">
+      <h3><span class="icon">🌾</span>GAD Parroquial</h3>
+      <span class="badge">Gobierno parroquial</span>
+      <p class="muted">Comunidades expuestas, población vulnerable, rutas seguras, puntos de encuentro y reportes comunitarios.</p>
+      <div class="tool-list"><span class="tool">F01</span><span class="tool">F04</span><span class="tool">F06</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('gad_parroquial')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="gobernacion">
+      <h3><span class="icon">📊</span>Gobernación / Ejecutivo desconcentrado</h3>
+      <span class="badge">Articulación gubernamental</span>
+      <p class="muted">Seguimiento interinstitucional, brechas, prioridades cantonales, decisiones y alertas de gestión.</p>
+      <div class="tool-list"><span class="tool">Dashboard</span><span class="tool">F06</span><span class="tool">F10</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('gobernacion')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="policia">
+      <h3><span class="icon">🚓</span>Policía Nacional</h3>
+      <span class="badge">Seguridad</span>
+      <p class="muted">Control de movilidad, apoyo a evacuación, seguridad en alojamientos y puntos de cierre.</p>
+      <div class="tool-list"><span class="tool">F03</span><span class="tool">F04</span><span class="tool">F11</span><span class="tool">ArcGIS</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('policia')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="ffaa">
+      <h3><span class="icon">🛻</span>Fuerzas Armadas</h3>
+      <span class="badge">Apoyo operativo</span>
+      <p class="muted">Apoyo logístico, movilidad, evacuación y atención a zonas aisladas.</p>
+      <div class="tool-list"><span class="tool">F03</span><span class="tool">F04</span><span class="tool">F11</span><span class="tool">ArcGIS</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('ffaa')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="bomberos">
+      <h3><span class="icon">🚒</span>Cuerpo de Bomberos</h3>
+      <span class="badge">Primera respuesta</span>
+      <p class="muted">Rescate, evacuación, incendios, atención inicial, recursos y cobertura operativa.</p>
+      <div class="tool-list"><span class="tool">F01</span><span class="tool">F03</span><span class="tool">F04</span><span class="tool">F11</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('bomberos')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="msp">
+      <h3><span class="icon">🏥</span>MSP</h3>
+      <span class="badge">Salud</span>
+      <p class="muted">Infraestructura de salud expuesta, continuidad operativa, riesgo sanitario y población vulnerable.</p>
+      <div class="tool-list"><span class="tool">F02</span><span class="tool">F03</span><span class="tool">F05</span><span class="tool">F11</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('msp')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="mineduc">
+      <h3><span class="icon">🏫</span>MINEDUC</h3>
+      <span class="badge">Educación</span>
+      <p class="muted">Unidades educativas expuestas, continuidad educativa, rutas seguras y potenciales alojamientos.</p>
+      <div class="tool-list"><span class="tool">F02</span><span class="tool">F04</span><span class="tool">F11</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('mineduc')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="mit">
+      <h3><span class="icon">🌉</span>MIT / Transporte</h3>
+      <span class="badge">Infraestructura y transporte</span>
+      <p class="muted">Red vial estratégica, puentes, rutas alternas, cierres preventivos y conectividad interprovincial.</p>
+      <div class="tool-list"><span class="tool">F07</span><span class="tool">F11</span><span class="tool">ArcGIS</span><span class="tool">Google Earth</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('mit')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="cnel">
+      <h3><span class="icon">⚡</span>CNEL / Energía</h3>
+      <span class="badge">Energía</span>
+      <p class="muted">Subestaciones, líneas críticas, continuidad eléctrica y prioridades de restablecimiento.</p>
+      <div class="tool-list"><span class="tool">F02</span><span class="tool">F03</span><span class="tool">F11</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('cnel')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="agua">
+      <h3><span class="icon">💧</span>Agua potable / Empresas públicas</h3>
+      <span class="badge">Servicios básicos</span>
+      <p class="muted">Captaciones, plantas, redes, bombeo, saneamiento, déficit hídrico y abastecimiento alternativo.</p>
+      <div class="tool-list"><span class="tool">F02</span><span class="tool">F03</span><span class="tool">F05</span><span class="tool">F11</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('agua')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="mies">
+      <h3><span class="icon">🤝</span>MIES / Protección social</h3>
+      <span class="badge">Protección social</span>
+      <p class="muted">Población vulnerable, asistencia social, protección y apoyo a alojamientos.</p>
+      <div class="tool-list"><span class="tool">F03</span><span class="tool">F04</span><span class="tool">F11</span><span class="tool">Dashboard</span><span class="tool">GPT</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('mies')">Ver ruta institucional</button></div>
+    </div>
+    <div class="card actor-card" id="maate">
+      <h3><span class="icon">🌿</span>MAATE / Ambiente</h3>
+      <span class="badge">Ambiente</span>
+      <p class="muted">Cuencas, fuentes hídricas, ecosistemas, zonas de erosión e impactos ambientales.</p>
+      <div class="tool-list"><span class="tool">F07</span><span class="tool">F11</span><span class="tool">ArcGIS</span><span class="tool">Google Earth</span></div>
+      <div class="btns"><button class="btn" onclick="showActor('maate')">Ver ruta institucional</button></div>
+    </div></div>
+</div></section>
+<section class="section" id="actor-detail-zone"><div class="container">
+    <div class="card actor-detail" data-actor="gad_cantonal" style="display:none">
+      <h2>🏛️ GAD Cantonal</h2>
+      <p><strong>Entregable esperado:</strong> Plan de Acción Cantonal ENOS</p>
+      <p class="muted"><strong>Enfoque:</strong> Puntos críticos, drenaje, infraestructura municipal, alojamientos, rutas, brechas y acciones preventivas.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="gad_provincial" style="display:none">
+      <h2>🛣️ GAD Provincial / Prefectura</h2>
+      <p><strong>Entregable esperado:</strong> Aporte provincial al Plan de Acción</p>
+      <p class="muted"><strong>Enfoque:</strong> Vialidad rural, puentes, cuencas, corredores productivos, maquinaria y apoyo a cantones.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="gad_parroquial" style="display:none">
+      <h2>🌾 GAD Parroquial</h2>
+      <p><strong>Entregable esperado:</strong> Ficha parroquial de aporte territorial</p>
+      <p class="muted"><strong>Enfoque:</strong> Comunidades expuestas, población vulnerable, rutas seguras, puntos de encuentro y reportes comunitarios.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="gobernacion" style="display:none">
+      <h2>📊 Gobernación / Ejecutivo desconcentrado</h2>
+      <p><strong>Entregable esperado:</strong> Reporte ejecutivo gubernamental</p>
+      <p class="muted"><strong>Enfoque:</strong> Seguimiento interinstitucional, brechas, prioridades cantonales, decisiones y alertas de gestión.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="policia" style="display:none">
+      <h2>🚓 Policía Nacional</h2>
+      <p><strong>Entregable esperado:</strong> Aporte sectorial de seguridad</p>
+      <p class="muted"><strong>Enfoque:</strong> Control de movilidad, apoyo a evacuación, seguridad en alojamientos y puntos de cierre.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="ffaa" style="display:none">
+      <h2>🛻 Fuerzas Armadas</h2>
+      <p><strong>Entregable esperado:</strong> Matriz de apoyo logístico</p>
+      <p class="muted"><strong>Enfoque:</strong> Apoyo logístico, movilidad, evacuación y atención a zonas aisladas.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="bomberos" style="display:none">
+      <h2>🚒 Cuerpo de Bomberos</h2>
+      <p><strong>Entregable esperado:</strong> Aporte operativo de primera respuesta</p>
+      <p class="muted"><strong>Enfoque:</strong> Rescate, evacuación, incendios, atención inicial, recursos y cobertura operativa.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="msp" style="display:none">
+      <h2>🏥 MSP</h2>
+      <p><strong>Entregable esperado:</strong> Plan sectorial de salud ENOS</p>
+      <p class="muted"><strong>Enfoque:</strong> Infraestructura de salud expuesta, continuidad operativa, riesgo sanitario y población vulnerable.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="mineduc" style="display:none">
+      <h2>🏫 MINEDUC</h2>
+      <p><strong>Entregable esperado:</strong> Aporte sectorial educativo</p>
+      <p class="muted"><strong>Enfoque:</strong> Unidades educativas expuestas, continuidad educativa, rutas seguras y potenciales alojamientos.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="mit" style="display:none">
+      <h2>🌉 MIT / Transporte</h2>
+      <p><strong>Entregable esperado:</strong> Matriz vial estratégica ENOS</p>
+      <p class="muted"><strong>Enfoque:</strong> Red vial estratégica, puentes, rutas alternas, cierres preventivos y conectividad interprovincial.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="cnel" style="display:none">
+      <h2>⚡ CNEL / Energía</h2>
+      <p><strong>Entregable esperado:</strong> Aporte sectorial energético</p>
+      <p class="muted"><strong>Enfoque:</strong> Subestaciones, líneas críticas, continuidad eléctrica y prioridades de restablecimiento.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="agua" style="display:none">
+      <h2>💧 Agua potable / Empresas públicas</h2>
+      <p><strong>Entregable esperado:</strong> Plan de continuidad de agua</p>
+      <p class="muted"><strong>Enfoque:</strong> Captaciones, plantas, redes, bombeo, saneamiento, déficit hídrico y abastecimiento alternativo.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="mies" style="display:none">
+      <h2>🤝 MIES / Protección social</h2>
+      <p><strong>Entregable esperado:</strong> Matriz de protección social</p>
+      <p class="muted"><strong>Enfoque:</strong> Población vulnerable, asistencia social, protección y apoyo a alojamientos.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div>
+    <div class="card actor-detail" data-actor="maate" style="display:none">
+      <h2>🌿 MAATE / Ambiente</h2>
+      <p><strong>Entregable esperado:</strong> Aporte ambiental y de cuencas</p>
+      <p class="muted"><strong>Enfoque:</strong> Cuencas, fuentes hídricas, ecosistemas, zonas de erosión e impactos ambientales.</p>
+      <div class="grid">
+        <div class="card soft"><h3>1. Construir escenario</h3><p>Identificar información territorial o sectorial por ejes del plan.</p><a class="btn light" href="cartografia.html">Abrir cartografía</a></div>
+        <div class="card soft"><h3>2. Levantar o aportar datos</h3><p>Usar los formularios Kobo correspondientes y adjuntar evidencias.</p><a class="btn light" href="ejes.html#formularios">Ver formularios</a></div>
+        <div class="card soft"><h3>3. Generar aporte</h3><p>Subir matriz o evidencias al GPT técnico y estructurar el entregable.</p><a class="btn light" href="https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0" target="_blank" rel="noopener">Abrir GPT</a></div>
+      </div>
+      <div class="notice">Los recursos sensibles, respuestas Kobo, dashboards completos y carpetas de trabajo requieren acceso institucional aprobado.</div>
+    </div></div></section>
+
+<footer class="footer"><div class="container">Ecosistema territorial ENOS Guayas 2.1 · Plataforma pública con recursos restringidos según competencia institucional.</div></footer>
+<div class="toast"></div>
+</body>
+</html>
