@@ -1,9 +1,9 @@
 {
   "links": {
     "gpt": "https://chatgpt.com/g/g-6a1db50eb650819185c06255c6850509-asistente-tecnico-enos-guayas-2-0",
-    "arcgis_viewer": "https://www.arcgis.com/apps/mapviewer/index.html?webmap=674af1befcfd4ae7bfbefdff918ebaf8",
+    "arcgis_viewer": "https://arcg.is/iGSLu0",
     "arcgis_blank": "https://www.arcgis.com/apps/mapviewer/index.html",
-    "earth": "https://earth.google.com/web/",
+    "earth": "https://earth.google.com/earth/d/1FN-JQLdUzfxbABJKH3GPmdS57EZeHe4h?usp=sharing",
     "drive_sprea": "https://drive.google.com/drive/folders/1pNIz_uzRD-woScEwm046HzYLo4VdLkwo?usp=sharing",
     "drive_raiz": "https://drive.google.com/drive/folders/1PufT2DXEN7XaR2LLjz382mevOI8rMcJK?usp=sharing",
     "kobo_f01": "https://ee.kobotoolbox.org/x/XuixUrMH",
@@ -29,6 +29,9 @@
     "base_territorial": "docs/identificacion_provincias_cantones_parroquias_ENOS.pdf",
     "kmz": "docs/cartografia/ENOS_Guayas_2_1_Base_Google_Earth.kmz",
     "geojson": "docs/cartografia/plantilla_capas_ENOS_Guayas_2_1.geojson",
-    "csv": "docs/cartografia/plantilla_puntos_ENOS_Guayas_2_1.csv"
+    "csv": "docs/cartografia/plantilla_puntos_ENOS_Guayas_2_1.csv",
+    "arcgis": "https://arcg.is/iGSLu0",
+    "google_earth_project": "https://earth.google.com/earth/d/1FN-JQLdUzfxbABJKH3GPmdS57EZeHe4h?usp=sharing",
+    "drive_cartografia": "https://drive.google.com/drive/folders/1a8hkBg1SkcY0xPYjxi1hyPTlUueZttrU?usp=sharing"
   }
 }
