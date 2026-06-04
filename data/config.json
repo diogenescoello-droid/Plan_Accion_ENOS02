@@ -17,7 +17,7 @@
     "kobo_f09_file": "docs/formularios/F09_XLSForm_validacion_boton_por_boton_Plataforma_ENOS_Guayas_2_1.xlsx",
     "kobo_f10_file": "docs/formularios/F10_XLSForm_solicitud_acceso_institucional_ENOS_Guayas_2_1.xlsx",
     "kobo_f11_file": "docs/formularios/F11_XLSForm_propuesta_escenario_institucional_ENOS_Guayas_2_1.xlsx",
-    "matriz": "docs/matrices/Matriz_maestra_ENOS_Guayas_2_1_FINAL.xlsx",
+    "matriz": "docs/matrices/matriz_maestra_enos_2_1.xlsx",
     "plantilla": "docs/Plantillas_maestras_ENOS_Guayas_2_0.xlsx",
     "manual": "docs/Manual_uso_Plataforma_ENOS_Guayas_2_0.docx",
     "formato_sprea": "docs/insumos_sprea/Formato_referencial_plan_accion_cantonal_provincial.docx",
@@ -32,6 +32,7 @@
     "csv": "docs/cartografia/plantilla_puntos_ENOS_Guayas_2_1.csv",
     "arcgis": "https://arcg.is/iGSLu0",
     "google_earth_project": "https://earth.google.com/earth/d/1FN-JQLdUzfxbABJKH3GPmdS57EZeHe4h?usp=sharing",
-    "drive_cartografia": "https://drive.google.com/drive/folders/1a8hkBg1SkcY0xPYjxi1hyPTlUueZttrU?usp=sharing"
+    "drive_cartografia": "https://drive.google.com/drive/folders/1a8hkBg1SkcY0xPYjxi1hyPTlUueZttrU?usp=sharing",
+    "solicitud_acceso_drive": "docs/formularios/F10_XLSForm_solicitud_acceso_institucional_ENOS_Guayas_2_1.xlsx"
   }
 }
